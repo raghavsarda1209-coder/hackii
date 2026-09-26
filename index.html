@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CampusBook · Smart Campus Resource Booking</title>
+  <meta name="description" content="Book campus rooms, labs and facilities with automatic double-booking detection, conflict prevention and usage analytics.">
+  <meta name="theme-color" content="#ff7a1a">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23ff7a1a'/%3E%3Ctext x='32' y='43' font-family='Segoe UI' font-size='30' font-weight='bold' fill='white' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===================== auth / mode screen ===================== -->
+  <section id="auth" hidden></section>
+
+  <!-- ===================== application shell ===================== -->
+  <div class="app" id="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="mark">CB</div>
+        <div>
+          <b>CampusBook</b>
+          <small>Resource Intelligence</small>
+        </div>
+      </div>
+      <nav class="nav" id="nav"></nav>
+      <div class="sidebar-foot" id="sidefoot"></div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="flex" id="crumbs"></div>
+        <div class="spacer"></div>
+        <div class="rowacts" id="topacts"></div>
+      </header>
+      <section class="view" id="view"></section>
+    </main>
+  </div>
+
+  <noscript>
+    <div style="padding:40px;font-family:system-ui">
+      <h1>JavaScript is required</h1>
+      <p>CampusBook needs JavaScript enabled to run conflict detection in your browser.</p>
+    </div>
+  </noscript>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
